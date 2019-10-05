@@ -21,7 +21,7 @@
             "aot": false,
 "glob": "_redirects",
   "input": "src",
-  "output": "/"
+  "output": "/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
