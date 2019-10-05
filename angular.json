@@ -19,10 +19,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+"glob": "_redirects",
+  "input": "src",
+  "output": "/"
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-		"src/_redirects"
+              "src/assets"
+	
             ],
             "styles": [
               "src/styles.css"
