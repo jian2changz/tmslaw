@@ -1,0 +1,23 @@
+.info{
+	background-color: #e4e4e4;
+	height:100%;
+}
+body{
+	background-color: blue;
+}
+
+h1{
+	margin:0;
+}
+
+.inline{
+	background-color:#e4e4e4;
+	display:block;
+	position: absolute;
+	width:30rem;
+	height:20rem;
+	
+}
+.welcome{
+	position:relative;
+}

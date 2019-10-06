@@ -1,5 +1,7 @@
-
-
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <header>
   <div class="container">
     <a routerLink="/" class="logo">apptitle</a>
@@ -18,6 +20,6 @@
 
 </header>
 
-<main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+<main [@routerTransition]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet"></router-outlet>
 </main>
