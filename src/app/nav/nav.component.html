@@ -1,1 +1,9 @@
-<p>nav works!</p>
+<button class="btn" (click)="myClickFunction($event)">Click me!</button>
+<div class="navv" [@slideOut]="navState"> 
+<ul>
+  <li [@childani]="navState">Menu Item</li>
+  <li [@childani]="navState">Menu Item</li>
+  <li [@childani]="navState">Menu Item</li>
+  <li [@childani]="navState"routerLink="/about">Menu Item</li>
+</ul>
+</div>

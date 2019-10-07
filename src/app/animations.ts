@@ -1,10 +1,12 @@
 import {
   trigger,
   animate,
+  animateChild,
   transition,
   style,
   group,
   query,
+  state,
   stagger
 } from '@angular/animations';
 
@@ -63,3 +65,31 @@ export const routerTransition = trigger('routerTransition', [
       ])
     ])
   ])
+
+export const slideOut = trigger('slideOut', [
+      state('in', style({
+        transform: 'translate3d(0, 0, 0)'
+      })),
+      state('out', style({
+        transform: 'translate3d(-100%, 0, 0)'
+      })),
+      transition('in <=> out', [
+        group([
+          query('@childani', stagger(25, [animateChild()]), { optional: true }),
+       animate('250ms cubic-bezier(0.645, 0.045, 0.355, 1)'),
+       ]),
+    ])
+      ])
+
+export const childani = trigger('childani', [
+      state('in', style({
+        transform: 'translate3d(0, 0, 0)', opacity:1
+      })),
+      state('out', style({
+        transform: 'translate3d(-100%, 0, 0)', opacity:0
+      })),
+      transition('in <=> out', [
+       
+       animate('500ms cubic-bezier(0.645, 0.045, 0.355, 1)'),])
+    ])
+      

@@ -1,12 +1,23 @@
 header{
-	background-color: red;
+	background-color: black;
 }
 
 .container{
+	position:relative;
 	background-color:red;
-	height:15rem;
+	height:5rem;
+	z-index:200;
 }
 
 a{
 	font-size:2rem;
+}
+
+ul{
+	margin:0;
+}
+
+.rotate{
+	background-color: green;
+
 }

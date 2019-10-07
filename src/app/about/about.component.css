@@ -1,5 +1,5 @@
 .info{
-	background-color: #e4e4e4;
+	background-color: white;
 	height:100%;
 }
 body{
@@ -11,7 +11,7 @@ h1{
 }
 
 .inline{
-	background-color:#e4e4e4;
+	background-color:white;
 	display:block;
 	position: absolute;
 	width:30rem;

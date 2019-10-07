@@ -5,6 +5,7 @@
 <header>
   <div class="container">
     <a routerLink="/" class="logo">apptitle</a>
+    
     <nav>
       <ul>
         <li><a routerLink="/">myapp</a></li>
@@ -19,7 +20,7 @@
 
 
 </header>
-
+<app-nav ></app-nav>
 <main [@routerTransition]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet"></router-outlet>
 </main>
