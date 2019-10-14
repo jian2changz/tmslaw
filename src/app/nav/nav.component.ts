@@ -20,7 +20,7 @@ export class NavComponent implements OnInit {
   rotateright = 'start';
   hide = 'start';
 
-  constructor(private router: Router) {
+  constructor(public router: Router) {
   router.events.subscribe((val) => {
     if (val instanceof NavigationEnd) {
       this.navState = 'out';
