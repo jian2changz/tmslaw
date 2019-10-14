@@ -3,8 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  mapbox: {
+    accessToken: 'pk.eyJ1IjoiamM3ODM5MCIsImEiOiJjazFwbHZ6NHUweWZoM25wazd2dnk2NjdmIn0.WhKYdt7vlnfwXYZOKix4PQ'
+}
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

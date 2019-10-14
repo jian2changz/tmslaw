@@ -26,28 +26,33 @@
 
 .hamburger-1{
   position:absolute;
-  top:30%;
+  top:35%;
   left:0;
   width:50px;
-  height:6px;
-  background-color:white;
+  height:2px;
+  background-color:black;
   transform-origin: center;
 }
+
 .hamburger-2{
   position:absolute;
   top:50%;
   left:0;
   width:50px;
-  height:6px;
-  background-color:white;
+  height:2px;
+  background-color:black;
 }
 .hamburger-3{
   position:absolute;
-  top:70%;
+  top:65%;
   left:0;
   width:50px;
-  height:6px;
-  background-color:white;
+  height:2px;
+  background-color:black;
+}
+
+.red{
+  background-color:red;
 }
 
 .active-link{
@@ -65,10 +70,10 @@
 }
  
 ul {
-  font-size: 5rem;
-  line-height: 1.5;
-  font-weight: 400;
-  padding-top: 50px;
+  font-size: 3rem;
+  line-height: 1.8;
+  font-weight: 900;
+  padding: 1rem;
   list-style: none;
   font-family: Roboto;
 }

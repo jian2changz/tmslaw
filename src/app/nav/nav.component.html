@@ -1,12 +1,12 @@
 <button class="btn" (click)="myClickFunction($event)">
-	<div class="hamburger-1" [@hamburgerani]="rotateright"></div>
-	<div class="hamburger-2" [@hamburgerani]="hide"></div>
-	<div class="hamburger-3" [@hamburgerani]="rotateleft"></div>
+	<div class="hamburger-1" [ngClass]="{'red' : router?.url === '/contact'}"  [@hamburgerani]="rotateright"></div>
+	<div class="hamburger-2" [ngClass]="{'red' : router?.url === '/contact'}" [@hamburgerani]="hide"></div>
+	<div class="hamburger-3" [ngClass]="{'red' : router?.url === '/contact'}" [@hamburgerani]="rotateleft"></div>
 </button>
 <div class="navv" [@slideOut]="navState"> 
 <ul>
-  <li [@childani]="navState" routerLink="/contact" routerLinkActive="active-link">Contact</li>
-  <li [@childani]="navState" routerLink="/about" routerLinkActive="active-link">About</li>
-  <li [@childani]="navState"routerLink="/home" routerLinkActive="active-link">Menu</li>
+  <li [@childani]="navState" routerLink="/home" routerLinkActive="active-link">Services</li>
+  <li [@childani]="navState" routerLink="/about" routerLinkActive="active-link">Who We Are</li>
+  <li [@childani]="navState"routerLink="/contact" routerLinkActive="active-link">Contact Us</li>
 </ul>
 </div>

@@ -14,7 +14,11 @@ export class NavComponent implements OnInit {
 
 	
 	appTitle = 'myapp';
-	
+  
+  navState:string = 'out';
+  rotateleft = 'start';
+  rotateright = 'start';
+  hide = 'start';
 
   constructor(private router: Router) {
   router.events.subscribe((val) => {
@@ -27,10 +31,7 @@ export class NavComponent implements OnInit {
   });
 }
 
- navState:string = 'out';
- rotateleft = 'start';
- rotateright = 'start';
- hide = 'start';
+
 
 myClickFunction(event) { 
       this.navState = this.navState === 'out' ? 'in' : 'out';

@@ -104,10 +104,10 @@ state('start', style({
         transform: 'translate3d(0, 0, 0)'
       })),
   state('45left', style({
-        transform: 'rotate(225deg)', top: '50%'
+        transform: 'rotate(225deg)', top: '50%', 'background-color' : 'white'
       })),
       state('45right', style({
-        transform: 'rotate(-225deg)',  top: '50%'
+        transform: 'rotate(-225deg)',  top: '50%', 'background-color' : 'white'
       })),
       state('hide', style({
         transform: 'rotate(225deg)',  top: '50%'
