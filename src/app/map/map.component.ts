@@ -14,7 +14,7 @@ export class MapComponent implements OnInit {
   lng = -113.4742;
   constructor() { }
   ngOnInit() {
-    mapboxgl.accessToken = environment.mapbox.accessToken;
+    (mapboxgl as any).accessToken = environment.mapbox.accessToken;
       this.map = new mapboxgl.Map({
         container: 'map',
         style: this.style,
