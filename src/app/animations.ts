@@ -62,6 +62,16 @@ export const routerTransition = trigger('routerTransition', [
         style({ transform: 'translateY(0%)', opacity:1 }),
         animate('0.5s 0.25s ease-in-out', style({ transform: 'translateY(100%)', opacity:0 }))
       ], { optional: true }),
+
+      query(':enter .blkbg', stagger(200, [
+        style({ width: '0' }),
+        animate('0.5s 0.75s ease-in-out', style({ width: '100%' }))
+      ]), { optional: true }),
+
+      query(':leave .blkbg', [
+        style({  width: '100%' }),
+        animate('0.5s 0.25s ease-in-out', style({ width: '0' }))
+      ], { optional: true }),
       
       ])
     ])

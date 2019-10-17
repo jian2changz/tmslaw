@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MapComponent } from './map/map.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MapComponent } from './map/map.component';
     ContactComponent,
     HomeComponent,
     NavbarComponent,
-    MapComponent
+    MapComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

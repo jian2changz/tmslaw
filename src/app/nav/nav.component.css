@@ -72,9 +72,11 @@
 ul {
   font-size: 3rem;
   line-height: 1.8;
-  font-weight: 900;
+  font-weight: 500;
   padding: 1rem;
   list-style: none;
   font-family: Roboto;
+  border-top: 1px solid red;
+  margin-top:5rem;
 }
  

@@ -5,8 +5,11 @@
 </button>
 <div class="navv" [@slideOut]="navState"> 
 <ul>
-  <li [@childani]="navState" routerLink="/home" routerLinkActive="active-link">Services</li>
+  <li [@childani]="navState" routerLink="/services" routerLinkActive="active-link">Services</li>
   <li [@childani]="navState" routerLink="/about" routerLinkActive="active-link">Who We Are</li>
   <li [@childani]="navState"routerLink="/contact" routerLinkActive="active-link">Contact Us</li>
 </ul>
+<i [@childani]="navState" class="fas fa-phone-alt fa-2x"></i>
+<i class="far fa-envelope fa-2x"></i>
+
 </div>

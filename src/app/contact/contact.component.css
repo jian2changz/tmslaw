@@ -9,11 +9,17 @@ h1{
 	font-size:4rem;
 	color: white;
 	margin:0;
+	padding-left:1rem;
+	border-top: 1px solid white;
 }
 
 .info{
 	padding:2rem;
 	line-height:1.5;
+}
+.hours{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 }
 .avenue{
 	height: 20px;
@@ -23,6 +29,5 @@ h1{
 
 .welcome{
 	padding-top: 5rem;
-	padding-left: 1rem;
 	padding-bottom: 2rem;
 }
