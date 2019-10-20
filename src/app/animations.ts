@@ -82,7 +82,7 @@ export const slideOut = trigger('slideOut', [
         transform: 'translate3d(0, 0, 0)'
       })),
       state('out', style({
-        transform: 'translate3d(-100%, 0, 0)'
+        transform: 'translate3d(0, 100%, 0)'
       })),
       transition('in <=> out', [
         group([
@@ -114,10 +114,10 @@ state('start', style({
         transform: 'translate3d(0, 0, 0)'
       })),
   state('45left', style({
-        transform: 'rotate(225deg)', top: '50%', 'background-color' : 'white'
+        transform: 'rotate(225deg)', top: '50%', 'background-color' : 'red'
       })),
       state('45right', style({
-        transform: 'rotate(-225deg)',  top: '50%', 'background-color' : 'white'
+        transform: 'rotate(-225deg)',  top: '50%', 'background-color' : 'red'
       })),
       state('hide', style({
         transform: 'rotate(225deg)',  top: '50%'

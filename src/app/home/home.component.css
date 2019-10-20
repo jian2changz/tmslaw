@@ -3,3 +3,8 @@ h1{
     font-size:3rem;
     padding:2rem;
 }
+
+.hero-text{
+    position:relative;
+    top:5rem;
+}
